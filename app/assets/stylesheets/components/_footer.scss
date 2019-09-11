@@ -5,3 +5,14 @@
   background: black;
   color: magenta;
 }
+
+.footer h2 {
+  color: magenta
+;}
+
+/* Responsive layout - when the screen is less than 400px wide, make the font size 18px */
+@media screen and (max-width: 500px) {
+  .footer h2 {
+    font-size: 18px;
+  }
+}

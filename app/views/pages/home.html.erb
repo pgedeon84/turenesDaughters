@@ -1,25 +1,30 @@
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 <div class="home-banner">
   <%= image_tag "td.png", alt: "Turene's Daughters", class: "responsive" %>
+  <div class="dwn-arrow">
+    <span class="arrow"><i class="fas fa-arrow-down"></i></span>
+  </div>
 </div>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <a class="navbar-brand" href="#">
 </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse color-magenta" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><span>Home</span></a>
+        <a class="nav-link" href="#"><span>Home <i class="fas fa-home"></i></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Shop</span></a>
+        <a class="nav-link" href="#"><span>Shop <i class="fas fa-shopping-cart"></i></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Designer Blog</span></a>
+        <a class="nav-link" href="#"><span>Designer Blog <i class="fab fa-blogger"></i></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Contact Us</span></a>
+        <a class="nav-link" href="#"><span>Contact Us</i></span></a>
       </li>
     </ul>
   </div>
@@ -41,7 +46,7 @@
   </div>
   <div class="main">
     <h2 class="color-blue">Welcome to the Fashion District</h2>
-    <h5>New York City, Dec 7, 2017</h5>
+    <h5>New York City, Dec 7, 2019</h5>
     <div class="fakeimg" style="height:auto;"></div>
     <p>New York City is already considered to be one of the world’s most stylish cities, but I think it’s important to point out that its inhabitants are also especially masterful at seasonal dressing. After all, they (actually we) have to figure out how to tackle beyond-freezing temperatures in the winter, high heat and humidity in the summer, and even transitional dressing for those fleeting moments in spring and fall when the weather is just perfect—all while walking around a lot.
     <br><br>
@@ -49,22 +54,43 @@
     </p>
     <br>
     <h2></h2>
-    <h5>Old Port of Montreal, Sep 2, 2017</h5>
+    <h5>Old Port of Montreal, Sep 2, 2019</h5>
     <div class="fakeimg" style="height: auto;"></div>
     <p>Renowned for European-style charm, boutique hotels, art galleries, trendy bars, and a port teeming with activities, Old Montreal is a favourite destination for tourists and also for Montrealers who enjoy the feeling of being on vacation for a weekend or an afternoon. We sometimes forget, however, that this area is full of unique shops stocked with items by emerging local talents and internationally recognized designers. This week, we propose a shopping spree in three parts: the best places to find souvenirs; household furnishings and decorations, and women's clothing and accessories.
     <br><br>
     Ever wondered what makes Montrealers so fashionable? Take one look at some of our favorite stores for shopping in Montreal, and the answer’s clear: This island’s a haven for great shopping options, whether it’s for casual wear or something to slip into before enjoying the city’s nightlife. From high-end fashion to accessible everyday looks, vintage boutiques and flea markets to department stores with don’t-miss discounts, there are options that suit everybody’s different needs and budgets. Call up your squad, grab some brunch and check out these places appealing to all (cat)walks of life.</p>
     <br>
     <h2>Discover The World of Fabric</h2>
-    <h5>Natural Vs Synthetics, Sep 2, 2017</h5>
+    <h5>Natural Vs Synthetics, Sep 2, 2019</h5>
     <div class="fakeimg" style="height: auto;"></div>
     <p>In the world, people are crazy about fashion, especially in fabrics. Admit it, people evaluating a person status based on the clothes they wore this point would express how much they are crazy about fabrics.
     <br><br>
     Clothing has been in the list of basic needs of life in that fabric can also be added. Nowadays, before purchasing clothes people started to evaluate the price value based on the fabric, style & designs used in it. Our only intended to educate users about the types of fabrics and speciality, we would like to share the information that we collected.</p>
     <br>
     <h2>Fashionistas Extravagenza</h2>
-    <h5>Meet Us, Sep 2, 2017</h5>
+    <h5>Meet Us, Sep 2, 2019</h5>
     <div class="fakeimg" style="height: auto;"></div>
     <p>The secret lies in their deft reimagining of the chintzy clothing worn by women of that generation, blended with more clean and classic design. “We want to talk about this era in Asia that not a lot of people talk about, that not a lot of people choose to romanticize,” Cao says of the cusp between the ’80s and ’90s. Then, stylish women across the continent, without access to high-end labels, made do with tailored pieces inspired by trends from the West but cut from cheaper cloth. Think: the sheen on a “silk”-blend blouse or the creaseless fall of a pleated polyester shirtdress. Each season, Luong has created an exaggerated floral print, inspired by the cheesy gift wrap, tablecloths, and couch covers that were common to Asian households. Spring’s confection is a hyperrealistic spray of pink roses printed on two disparate sets: a spandex legging and deep-V-necked cardigan, and a silk pleated skirt and pussybow blouse.</p>
   </div>
 </div>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 2220 || document.documentElement.scrollTop > 2220) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 750;
+  document.documentElement.scrollTop = 750;
+}
+</script>

@@ -20,6 +20,8 @@
   padding: 10px;
 }
 
+/* Fake image, increases size when hovering over it */
+
 .fakeimg:hover {
   width: 102%;
 }
@@ -54,6 +56,10 @@
 
 .color-blue {
   color: #5ca0d3;
+}
+
+p {
+  text-indent: 25px;
 }
 
 h2 {

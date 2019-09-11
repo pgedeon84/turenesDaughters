@@ -18,11 +18,24 @@
   background-color: #555;
 }
 
-.caption {
+.dwn-arrow {
   position: absolute;
-  left: 0;
-  top: 50%;
+  right: 0;
+  top: 94%;
   width: 100%;
   text-align: center;
-  color: #000;
 }
+
+.dwn-arrow span.arrow {
+  background-color: transparent;
+  color: magenta;
+  border: none;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .dwn-arrow span.arrow {
+    display: none;
+  }
+}
+

@@ -3,11 +3,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+
 gem 'autoprefixer-rails'
-gem 'font-awesome-sass', '~> 5.6.1'
-gem 'simple_form'
-gem 'cloudinary', '~> 1.9.1'
+#Used for authentication
+gem 'devise'
+#Used to store sensitive information
 gem 'dotenv-rails', groups: [:development, :test]
+# Used for icons from font-awesome
+gem 'font-awesome-sass', '~> 5.6.1'
+# Used to create Bootstrap Forms
+gem 'simple_form'
+# Used to store images on cloudinary server
+gem 'cloudinary', '~> 1.9.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record

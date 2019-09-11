@@ -1,1 +1,66 @@
-// Specific CSS for your home-page
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.fakeimg:hover {
+  width: 102%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: black;
+  padding: 20px;
+  color: lightgrey;
+  border-left: 2px solid lightpink;
+}
+
+.color-magenta {
+  color: magenta;
+}
+
+.color-blue {
+  color: #5ca0d3;
+}
+
+h2 {
+  color: #5ca0d3;
+  font-weight: bold;
+}
+h5 {
+  color: magenta;
+  font-style: italic;;
+}

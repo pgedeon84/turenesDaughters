@@ -1,18 +1,17 @@
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 <div class="home-banner">
-  <%= image_tag "td.png", alt: "Turene's Daughters", class: "responsive" %>
-  <div class="dwn-arrow">
-    <span class="arrow"><i class="fas fa-arrow-down"></i></span>
-  </div>
+  <%= image_tag "td.png", id: "logo", alt: "Turene's Daughters", class: "responsive"%>
+  <!-- <div>
+    <button onclick="topFunction()" title="Go to Article Section" class="dwnArrow"><i class="fas fa-chevron-down"></i></button>
+  </div> -->
 </div>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <a class="navbar-brand" href="#">
 </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse color-magenta" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#"><span>Home <i class="fas fa-home"></i></span></a>
@@ -29,10 +28,11 @@
     </ul>
   </div>
 </div>
-<br>
+
+</div>
 <div class="row">
   <div class="side">
-    <h2 class="color-blue">Fashion Boutique</h2>
+    <h2>Fashion Boutique</h2>
     <h5>Latest Fashion Trends</h5>
     <div class="fakeimg" style="height:auto;">
       <%= image_tag "amazing.jpg", alt: "alttext", class: "fakeimg" %>
@@ -45,7 +45,7 @@
     </div>
   </div>
   <div class="main">
-    <h2 class="color-blue">Welcome to the Fashion District</h2>
+    <h2>Welcome to the Fashion District</h2>
     <h5>New York City, Dec 7, 2019</h5>
     <div class="fakeimg" style="height:auto;"></div>
     <p>New York City is already considered to be one of the world’s most stylish cities, but I think it’s important to point out that its inhabitants are also especially masterful at seasonal dressing. After all, they (actually we) have to figure out how to tackle beyond-freezing temperatures in the winter, high heat and humidity in the summer, and even transitional dressing for those fleeting moments in spring and fall when the weather is just perfect—all while walking around a lot.
@@ -76,18 +76,18 @@
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
+var dwnArrow = document.getElementsByClassName("dwnArrow");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 2220px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 2220 || document.documentElement.scrollTop > 2220) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 750;

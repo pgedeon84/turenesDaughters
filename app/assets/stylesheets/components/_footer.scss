@@ -1,15 +1,37 @@
 /* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background-color: #e0e0e0;
-  color: rgb(181,71, 109);
-  font-weight: bold;
-}
+// .footer {
+//   padding: 20px;
+//   text-align: center;
+//   color: #000;
+//   background-color: rgb(181,71, 109);
+//   font-weight: bold;
+// }
 
 /* Responsive layout - when the screen is less than 400px wide, make the font size 18px */
 @media screen and (max-width: 500px) {
-  .footer h2 {
+  .footer {
     font-size: 18px;
   }
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  background-color: #444;
+  justify-content: center;
+}
+/* Create three equal columns that floats next to each other */
+.footer-column {
+  width: 33.33%;
+  height: 300px;
+  padding-top: 35px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

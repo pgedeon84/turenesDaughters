@@ -2,13 +2,10 @@
 .footer {
   padding: 20px;
   text-align: center;
-  background: black;
-  color: magenta;
+  background-color: #e0e0e0;
+  color: rgb(181,71, 109);
+  font-weight: bold;
 }
-
-.footer {
-  color: #f2f2f2
-;}
 
 /* Responsive layout - when the screen is less than 400px wide, make the font size 18px */
 @media screen and (max-width: 500px) {

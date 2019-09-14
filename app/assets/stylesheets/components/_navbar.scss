@@ -9,13 +9,13 @@
   flex-grow: 0;
 }
 
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
 
-// .navbar-lewagon-white {
-//   background-color: white;
-// }
+.navbar-lewagon-white {
+  background-color: white;
+}
 
 li span {
   color: rgb(181,71, 109);
@@ -47,7 +47,7 @@ li span {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   color: black;
 }
 

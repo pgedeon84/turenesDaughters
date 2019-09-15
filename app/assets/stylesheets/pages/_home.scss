@@ -11,6 +11,11 @@ body {
 img {
   vertical-align: middle;
 }
+
+/* Enables you to see more texts*/
+
+#more {display: none;}
+
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
   .dwnArrow {
@@ -30,31 +35,28 @@ img {
 .dwnArrow:hover {
   cursor: pointer;
 }
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
 
 /* Column container */
-.row {
+.body-row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  min-width: 101.05%;
+  max-width: 100%;
+  margin: auto;
 }
 
 /* Fake image, just for this example */
 .fakeimg {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 10px;
   position: relative;
+  margin: auto;
 }
 
 .responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* Create two unequal columns that sits next to each other */
@@ -65,6 +67,8 @@ img {
   background-color: #f6f6f6;
   padding: 20px;
   color: white;
+  max-width: auto;
+  height: auto;
 }
 
 /* Main column */
@@ -75,7 +79,8 @@ img {
   padding: 20px;
   color: #252525;
   border-left: 2px solid darkgrey;
-  max-width: 100%;
+  max-width: auto;
+  height: auto;
 }
 
 .color-magenta {

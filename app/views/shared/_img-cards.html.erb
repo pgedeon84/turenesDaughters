@@ -1,14 +1,15 @@
 <br>
 <div class="container" style="text-align: center; font-weight: bold; margin-top: 35px; margin-bottom: 35px"><h1 class="color-magenta" style="font-size: 45px">FASHION ICONS</h1></div>
 <br>
-<div class="row">
+<div class="img-card-row">
   <div class="img-card-column">
     <div class="img-card">
       <%= image_tag "miumiu.jpg", alt: "Miuccia Prada", style:"width:100%" %>
       <div class="img-card-container">
         <h3>Miuccia Prada</h3>
         <p class="title">Fashion Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Miuccia Bianchi Prada is an Italian billionaire fashion designer and businesswoman.<span id="dots">...</span><span id="more"> She is the head designer of Prada and the founder of its subsidiary Miu Miu.</p>
+        <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
     </div>
@@ -19,7 +20,8 @@
       <div class="img-card-container">
         <h3>Alexander McQueen</h3>
         <p class="title">Fashion Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Lee Alexander McQueen, CBE was a British fashion designer and couturier.<span id="dots">...</span><span id="more"> He worked as chief designer at Givenchy from 1996 to 2001, and founded his own fort Alexander McQueen label in 1992.</p>
+        <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
     </div>
@@ -30,10 +32,29 @@
       <div class="img-card-container">
         <h3>Gabrielle (CoCo) Chanel</h3>
         <p class="title">Fashion Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Gabrielle Bonheur "Coco" Chanel was a French fashion designer, businesswoman.<span id="dots">...</span><span id="more"> The founder and namesake of the Chanel brand, she was credited in the post-World War I era with liberating women from the constraints of the "corseted silhouette" and popularizing a sporty, casual chic as the feminine standard of style. </p>
+        <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
     </div>
   </div>
 </div>
 <br><br>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("moreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>

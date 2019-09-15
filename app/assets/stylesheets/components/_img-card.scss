@@ -14,7 +14,7 @@ html {
 }
 
 @media screen and (max-width: 650px) {
-  .img-column {
+  .img-card-column {
     width: 100%;
     display: block;
   }
@@ -22,6 +22,7 @@ html {
 
 .img-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
 }
 
 .img-card-container {
@@ -29,7 +30,7 @@ html {
   text-align: center;
 }
 
-.img-card-container::after, .row::after {
+.img-card-container::after, .img-card-row::after {
   content: "";
   clear: both;
   display: table;
@@ -53,4 +54,13 @@ html {
 
 .button:hover {
   background-color: #555;
+}
+
+.moreBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  color: rgb(107, 178, 219);
+  margin-bottom: 10px;
 }

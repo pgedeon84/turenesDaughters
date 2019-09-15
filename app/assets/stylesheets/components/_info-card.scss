@@ -1,22 +1,19 @@
-.icon-container {
-  width: 95%;
-  display: flex;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
 /* Float four columns side by side */
-.icon-column {
+.info-card-container {
+  width: 99%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.info-card-column {
   float: left;
   width: 25%;
   padding: 0 5px;
 }
 
-.row {margin: 0 -5px;}
+.info-card-row {margin: 0 -5px;}
 
 /* Clear floats after the columns */
-.row:after {
+.info-card-row:after {
   content: "";
   display: table;
   clear: both;
@@ -24,7 +21,7 @@
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .icon-column {
+  .info-card-column {
     width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -32,16 +29,15 @@
 }
 
 /* Style the counter cards */
-.icon-card {
+.info-card-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #444;
   color: white;
-  border-radius: 1%;
+  border-radius: 2%;
 }
 
-.fa {font-size:30px;
-  color: rgb(107, 178, 219);
+.fa {font-size:40px;
+  color: rgb(107, 178, 219);;
 }
-

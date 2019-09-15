@@ -8,7 +8,7 @@
       <div class="img-card-container">
         <h3>Miuccia Prada</h3>
         <p class="title">Fashion Designer</p>
-        <p>Miuccia Bianchi Prada is an Italian billionaire fashion designer and businesswoman.<span id="dots">...</span><span id="more"> She is the head designer of Prada and the founder of its subsidiary Miu Miu.</p>
+        <p>Miuccia Bianchi Prada is an Italian billionaire fashion designer and businesswoman<span id="dots">...</span><span id="more"> She is the head designer of Prada and the founder of its subsidiary Miu Miu.</span></p>
         <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
@@ -20,8 +20,8 @@
       <div class="img-card-container">
         <h3>Alexander McQueen</h3>
         <p class="title">Fashion Designer</p>
-        <p>Lee Alexander McQueen, CBE was a British fashion designer and couturier.<span id="dots">...</span><span id="more"> He worked as chief designer at Givenchy from 1996 to 2001, and founded his own fort Alexander McQueen label in 1992.</p>
-        <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
+        <p>Lee Alexander McQueen, CBE was a British fashion designer and couturier<span id="dots2">...</span><span id="more2"> He worked as chief designer at Givenchy from 1996 to 2001, and founded his own fort Alexander McQueen label in 1992.</span></p>
+        <button onclick="myFunction2()" id="moreBtn2" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
     </div>
@@ -32,8 +32,8 @@
       <div class="img-card-container">
         <h3>Gabrielle (CoCo) Chanel</h3>
         <p class="title">Fashion Designer</p>
-        <p>Gabrielle Bonheur "Coco" Chanel was a French fashion designer, businesswoman.<span id="dots">...</span><span id="more"> The founder and namesake of the Chanel brand, she was credited in the post-World War I era with liberating women from the constraints of the "corseted silhouette" and popularizing a sporty, casual chic as the feminine standard of style. </p>
-        <button onclick="myFunction()" id="moreBtn" class="moreBtn" style= "float: right">Read more</button>
+        <p>Gabrielle Bonheur "Coco" Chanel was a French fashion designer, businesswoman<span id="dots3">...</span><span id="more3"> The founder and namesake of the Chanel brand, she was credited in the post-World War I era with liberating women from the constraints of the "corseted silhouette" and popularizing a sporty, casual chic as the feminine standard of style.</span></p>
+        <button onclick="myFunction3()" id="moreBtn3" class="moreBtn" style= "float: right">Read more</button>
         <span><button class="button">Fashion Styles</button></span>
       </div>
     </div>
@@ -55,6 +55,38 @@ function myFunction() {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("moreBtn2");
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more";
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less";
+    moreText2.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunction3() {
+  var dots3 = document.getElementById("dots3");
+  var moreText3 = document.getElementById("more3");
+  var btnText3 = document.getElementById("moreBtn3");
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btnText3.innerHTML = "Read more";
+    moreText3.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btnText3.innerHTML = "Read less";
+    moreText3.style.display = "inline";
   }
 }
 </script>

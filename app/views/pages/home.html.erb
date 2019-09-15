@@ -1,4 +1,4 @@
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i onclick="topFunction()" class="upArrow fas fa-chevron-up"></i></button>
 <div class="home-banner" style="background-image: url('<%= image_path "boats.jpg" %>')">
   <span><%= image_tag "td.png", id: "logo", alt: "Turene's Daughters", class: "responsive"%></span>
   <div>
@@ -121,6 +121,7 @@
 //Get the button
 var mybutton = document.getElementById("myBtn");
 var dwnArrow = document.getElementsByClassName("dwnArrow");
+var upArrow
 
 // When the user scrolls down 2220px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
